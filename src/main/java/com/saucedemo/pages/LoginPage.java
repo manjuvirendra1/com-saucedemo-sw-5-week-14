@@ -12,9 +12,7 @@ import org.testng.Reporter;
 
 public class LoginPage extends Utility {
 
-    public LoginPage(){
-        PageFactory.initElements(driver, this);
-    }
+    
     @CacheLookup
             @FindBy(xpath = "//input[@name='user-name']")
     WebElement userNameField;
